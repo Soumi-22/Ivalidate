@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin:  0 ;
+    font-family: "Parkinsans", sans-serif;
+}
+
+
+
+nav {
+    min-width: fit-content;
+    background-color: rgb(4 22 57 / 95%);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: rgb(243, 252, 252);
+    padding: 5px 4px;
+}
+
+nav div span {
+        align-items: first baseline;
+      }
+
+/*nav{
+    flex-direction: column;
+}*/
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+    font-size:14px;
+}
+
+ul li a {
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(163, 252, 255);
+    text-shadow: 1px 3px 2px black, 0 0 30px rgb(97, 167, 238), 0 0 9px rgb(228, 255, 255);
+}
+
+
+main{
+    min-height: 77vh;
+    padding: 0px;
+}
+
+.container {
+    max-width: 100vw;
+    margin: auto;
+    padding: 305px 50px;
+    filter: blur(4px);
+    /* background-image: url(https://media.licdn.com/dms/image/C4E12AQGbgB0Wzfcaxg/article-cover_image-shrink_720_1280/0/1591020102126?e=2147483647&v=beta&t=aHGD1TvfU1KRx6wjvjad8Xv5DUXE6iV0JbjCJrN8s6g); */
+    background-image: linear-gradient(to bottom right, rgba(0, 43, 128, 0.95), rgb(232, 251, 251));
+    background-size: cover;
+    height: 186px;
+    min-height: 10vh;
+    border-radius: 1px;
+    filter: brightness(97%);
+    background-attachment: fixed;
+    
+}
+
+
+h1 {
+    
+    color: rgb(29, 26, 26);
+    position: absolute;
+    top: 8%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 35px;
+    text-shadow: #000000;
+}
+
+ p {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 13%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 19px;
+}
+
+
+.btn{
+    background: black;
+    color: rgb(249, 245, 239);
+    border-radius: 5px;
+    padding: 7px 7px;
+    border: 2px #d2d2d2;
+    cursor: pointer;
+}
+
+
+form {
+    color: rgb(140, 220, 236);
+    color: inherit;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+label{
+    color: black;
+}
+
+input{
+    min-width: 40px;
+    padding: 6px 12 px;
+    border: 2px black;
+    border-radius: 4px;
+}
+
+input#name{
+    border-style: solid;
+    border-width: 1px;
+}
+
+input#email{
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.content form {
+    width: 280px;
+    height: 122px;
+    padding: 42px 38px;
+    top: 31%;
+    background: rgba(251, 251, 205, 0.445);
+    backdrop-filter: blur(6px);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: -3px 9px 24px -9px rgba(0, 0, 0, 1.6);
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color:#ffffff ;
+    }
+    h1{
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+    }
+    p{
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        top: 18%;
+        left: 51%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+    }
+    .content form{
+        width: 324px;
+        height: 128px;
+        padding: 40px 24px;
+        top: 37%;
+    }
+    .container{
+        height: 180px;
+        min-height: 16vh;
+    }
+    .results {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+    .results h2{
+        margin-top: 72px !important;
+    }
+    
+    
+}
+
+
+.logo{
+    padding: 10px 0px;
+}
+
+.logo img{
+    width: 80px;
+    padding-left: 2rem;
+}
+
+.logo span{
+    font-size: 31px;
+    text-shadow: 2px 2px #273e69;
+    
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+.results {
+    margin-top: 16px;
+    margin-left: 25px;
+    padding: 15px;
+    /* background-color: #d80505; */
+    /* border: 1px solid #ffffff; */
+    text-align: center;
+  }
+  
+  .results h2 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 35px;
+    margin-top: 52px;
+    margin-left: -18px;
+  }
+
+  #resultCont{
+    color: #000000;
+  }
+
+footer {
+    background-color: rgb(4 22 57 / 95%);
+    color: rgb(243, 252, 252);
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    top: 25%;
+    left: 49%;
+
+      
+}
+
+
